@@ -1,0 +1,6 @@
+env/
+
+data/.*
+!data/.gitkeep
+
+src/__pycache__/
