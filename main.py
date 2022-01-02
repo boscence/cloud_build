@@ -17,4 +17,4 @@ def run():
     return ('', 204)
 
 if __name__ == "__main__":
-    app.run(debug=True, host = "0.0.0.0")
+    PORT = int(os.getenv("PORT")) if os.getenv("PORT") else 8080
