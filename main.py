@@ -17,4 +17,4 @@ def run():
     return (f"{file_staged} was upliaded to iss_5min")
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=8080, debug=True)
+    app.run()
