@@ -14,7 +14,7 @@ def run():
                         f"data/{file_staged}", 
                         f"iss_5min/{file_staged}")
  
-    return ('', 204)
+    return (f"{file_staged} was upliaded to iss_5min")
 
 if __name__ == "__main__":
-    PORT = int(os.getenv("PORT")) if os.getenv("PORT") else 8080
+    app.run(host="localhost", port=8080, debug=True)
