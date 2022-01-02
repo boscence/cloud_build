@@ -15,7 +15,7 @@ steps:
 
   # Deploy to Cloud Run
   - name: google/cloud-sdk
-    args: ['gcloud', 'run', 'deploy', 'helloworld-${SHORT_SHA}', 
+    args: ['gcloud', 'run', 'deploy', 'iss-test-${SHORT_SHA}', 
            '--image=us-central1-docker.pkg.dev/${PROJECT_ID}/cloud-build/myimage:${SHORT_SHA}', 
            '--region', 'us-central1', '--platform', 'managed', 
            '--allow-unauthenticated']
