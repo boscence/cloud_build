@@ -11,6 +11,6 @@ COPY . .
 
 ENV PORT=8080
 
-#CMD [ "python3", "main.py"]
+CMD [ "python3", "main.py"]
 #CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+#CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
